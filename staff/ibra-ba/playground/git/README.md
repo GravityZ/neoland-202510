@@ -77,3 +77,22 @@ $ git add staff
 ## git config 
 
 for configure things 
+
+
+## git commit -m "comentario
+
+Consolidates changes in local repo.
+
+```sh
+$ git commit -m "cambios"
+
+```
+
+
+## git push 
+
+to upload all the local to github
+
+```sh
+$ git push
+```
