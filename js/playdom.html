@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jugando con dom</title>
+</head>
+
+<body>
+    <h1>Hola</h1>
+    <h2>Adios</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa officiis vitae ut aliquam iste aliquid harum ab,
+        tempora sint quasi quis quos accusantium illum et, magni inventore blanditiis itaque ullam dolor eaque.
+        Obcaecati maxime vitae inventore sint, tempora quisquam voluptas et. Atque debitis maxime ab qui aut eos ex,
+        soluta omnis dolores neque beatae explicabo vero facere. Delectus atque hic labore blanditiis, voluptatem
+        explicabo eaque laboriosam rem dolorum! Ab dolorum mollitia unde doloremque accusantium optio perferendis
+        dignissimos? Harum numquam at nulla expedita fugiat quam, autem suscipit esse cumque! Atque earum, fugit
+        veritatis quo aspernatur non maxime repellat consequatur? Amet, expedita!</p>
+
+
+    <script>
+
+        document.childNodes[1].childNodes[2].childNodes[1].style.color = 'red';
+        document.childNodes[1].childNodes[2].childNodes[1].style.background = 'royalblue';
+        document.childNodes[1].childNodes[2].childNodes[3].style.color = 'gold';
+        document.childNodes[1].childNodes[2].childNodes[3].style.background = 'green';
+        document.childNodes[1].childNodes[2].childNodes[5].style.color = 'white';
+        document.childNodes[1].childNodes[2].childNodes[5].style.background = 'black';
+
+        const face = document.createElement('div')
+
+        face.style.width = '300px'
+        face.style.height = '300px'
+        face.style.background = 'yellow'
+        face.style.borderRadius = '50%'
+        face.style.border = '2px solid black'
+        face.style.position = 'absolute'
+        face.style.top = '400px'
+        document.body.appendChild(face)
+
+
+        const eyeL = document.createElement('div')
+        eyeL.style.width = '70px'
+        eyeL.style.height = '70px'
+        eyeL.style.background = 'black'
+        eyeL.style.borderRadius = '50%'
+        eyeL.style.border = '2px solid black'
+        eyeL.style.position = 'absolute'
+        eyeL.style.left = '50px'
+        eyeL.style.top = '50px'
+
+        face.appendChild(eyeL)
+
+
+        const eyeR = document.createElement('div')
+        eyeR.style.width = '70px'
+        eyeR.style.height = '70px'
+        eyeR.style.background = 'black'
+        eyeR.style.borderRadius = '50%'
+        eyeR.style.border = '2px solid black'
+        eyeR.style.position = 'absolute'
+        eyeR.style.right = '50px'
+        eyeR.style.top = '50px'
+        face.appendChild(eyeR)
+
+
+        const boca = document.createElement('div')
+
+        boca.style.width = '180px'
+        boca.style.height = '150px'
+        boca.style.borderRadius = '50%'
+        boca.style.position = 'absolute'
+        boca.style.top = '130px'
+        boca.style.left = '60px'
+        boca.style.background = 'black'
+        boca.style.border = '2px solid black'
+        face.appendChild(boca)
+
+        const boca1 = document.createElement('div')
+
+        boca1.style.width = '200px'
+        boca1.style.height = '50px'
+        boca1.style.backgroundColor = 'yellow'
+        boca1.style.position = 'absolute'
+        boca1.style.left = '50px'
+        boca1.style.top = '130px'
+
+        face.appendChild(boca1)
+
+
+
+    </script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personaje que se mueve</title>
+</head>
+<body>
+    
+
+
+<script>
+
+    const player = document.createElement('div');
+
+    let arriba = '10'
+    let abajo = '10'
+    let izq = '10'
+    let dere = '10'
+
+
+    player.style.width = '150px'
+    player.style.height = '150px'
+
+    player.style.background = 'royalblue'
+    player.style.position = 'absolute'
+    player.style.top = arriba + 'px'
+    player.style.left = dere + 'px'
+    player.style.bottom = abajo + 'px'
+    player.style.right = izq + 'px'
+
+    document.body.appendChild(player)
+
+
+    const head = document.createElement('div')
+
+    head.style.width = '90px'
+    head.style.height = '70px'
+    head.style.background = 'tomato'
+    head.style.position = 'absolute'
+    head.style.top = '-70px'
+    head.style.left = '25px'
+
+    player.appendChild(head)
+
+
+    const arms = document.createElement('div')
+
+    arms.style.width = '220px'
+    arms.style.height = '120px'
+    arms.style.background = 'tomato'
+
+    arms.style.position = 'absolute'
+    arms.style.left = '-35px'
+    arms.style.zIndex = '-1'
+
+    player.appendChild(arms)
+
+    const legs = document.createElement('div')
+
+    legs.style.width = '100px'
+    legs.style.height = '100px'
+    legs.style.background = 'tomato'
+    legs.style.position = 'absolute'
+    legs.style.left = '25px'
+    legs.style.top = '150px'
+
+    player.appendChild(legs)
+
+    document.addEventListener('keydown', function(event) {
+        arriba += 10
+    });
+
+</script>
+
+</body>
+</html>
