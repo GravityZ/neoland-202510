@@ -39,7 +39,7 @@ Veterinary (User)
 
 ### UI/UX design
 
-[Figma]('link')
+[Figma]('')
 
 ## Technical description
 

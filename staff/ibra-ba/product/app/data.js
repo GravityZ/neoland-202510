@@ -9,16 +9,18 @@ function User(id, name, email, username, password, role) {
     this.role = role;
 }
 
-function Pet(id, userId, chip, name, gender, birthDate, species, race, colurs) {
-    this.id = id;
-    this.userId = userId;
-    this.chip = chip;
-    this.name = name;
-    this.gender = gender;
-    this.birthDate = birthDate;
-    this.species = species;
-    this.race = race;
-    this.colurs = colurs;
+function Pet(id, userId, /*chip,*/ name, /*gender,*/ birthdate, weight, /*species, race, colors,*/ image) {
+    this.id = id
+    this.userId = userId
+    // this.chip = chip
+    this.name = name
+    // this.gender = gender
+    this.birthdate = birthdate
+    this.weight = weight
+    // this.species = species
+    // this.race = race
+    // this.colors = colors
+    this.image = image
 }
 
 
@@ -29,6 +31,7 @@ function Data() {
     this.usersCount = 0;
     this.pets = [];
     this.petsCount = 0;
+    this.loggedInUserId = null
 }
 
 
@@ -38,7 +41,7 @@ Data.prototype.insertUser = function (user) {
 }
 
 
-Data.prototype.findUserByEmail = function(email) {
+Data.prototype.findUserByEmail = function (email) {
     for (let i = 0; i < this.users.length; i++) {
         const user = this.users[i]
 
@@ -48,7 +51,7 @@ Data.prototype.findUserByEmail = function(email) {
     return null
 }
 
-Data.prototype.findUserByUsername = function(username) {
+Data.prototype.findUserByUsername = function (username) {
     for (let i = 0; i < this.users.length; i++) {
         const user = this.users[i]
 
@@ -58,9 +61,17 @@ Data.prototype.findUserByUsername = function(username) {
     return null
 }
 
-Data.prototype.insertPet = function(pet) {
+Data.prototype.insertPet = function (pet) {
     this.pets.push(pet)
     this.petsCount++
+}
+
+Data.prototype.setLoggedInUserId = function (userId) {
+    this.loggedInUserId = userId
+}
+
+Data.prototype.getLoggedInUserId = function () {
+    return this.loggedInUserId
 }
 
 const data = new Data()

@@ -1,0 +1,2 @@
+data.insertUser(new User('user-' + data.usersCount, 'Peter Pan', 'peterpan@gmail.com', 'peterpan', '12345678', 'regular'))
+data.insertUser(new User('user-' + data.usersCount, 'Wendy Darling', 'darlingwndy@gmail.com', 'wendddy', 'sisiwendysi', 'regular'))
