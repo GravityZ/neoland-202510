@@ -59,7 +59,7 @@ Logic.prototype.addPet = function (name, birthdate, weight, image) {
     if (data.getLoggedInUserId() === null) throw new Error('user not logged in')
 
     const user = data.findUserById(data.getLoggedInUserId())
-    if (data.getLoggedInUserId() === null) throw
+    if (user === null) throw new Error('user not found')
 
     if (typeof name !== 'string') throw new Error('invalid name type')
     if (name.length < 1) throw new Error('invalid name length')
