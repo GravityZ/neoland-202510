@@ -113,7 +113,7 @@ registerForm.addEventListener('submit', function (event) {
     event.preventDefault()
 
     const name = registerNameInput.value
-    const email = registerUsernameInput.value
+    const email = registerEmailInput.value
     const username = registerUsernameInput.value
     const password = registerPasswordRepeatInput.value
     const repeatPass = registerPasswordRepeatInput.value

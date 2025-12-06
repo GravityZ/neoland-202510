@@ -1,5 +1,4 @@
 function Logic() {
-
 }
 
 Logic.prototype.registerUser = function (name, email, username, password, repeatPassword) {
@@ -55,7 +54,6 @@ Logic.prototype.logoutUser = function () {
 }
 
 Logic.prototype.addPet = function (name, birthdate, weight, image) {
-
     if (data.getLoggedInUserId() === null) throw new Error('user not logged in')
 
     const user = data.findUserById(data.getLoggedInUserId())
@@ -66,7 +64,7 @@ Logic.prototype.addPet = function (name, birthdate, weight, image) {
 
     if (typeof birthdate !== 'string') throw new Error('invalid birthdate type')
 
-    const isoDateRegex = /^\d{4}-\d{2}-\d{2}$/ // new RegExp
+    const isoDateRegex = /^\d{4}-\d{2}-\d{2}$/
     if (!isoDateRegex.test(birthdate)) throw new Error('invalid birthdate format')
 
     if (typeof weight !== 'number' || isNaN(weight)) throw new Error('invalid weight type')
@@ -81,11 +79,14 @@ Logic.prototype.addPet = function (name, birthdate, weight, image) {
     data.insertPet(pet)
 }
 
+
+
+
 Logic.prototype.getPets = function () {
     if (data.getLoggedInUserId() === null) throw new Error('user not logged in')
 
     const user = data.findUserById(data.getLoggedInUserId())
-    if (user === null) throw
+    if (user === null) throw new Error('User not found')
 
     const pets = data.findPetsByUserId(data.getLoggedInUserId())
 
@@ -93,5 +94,4 @@ Logic.prototype.getPets = function () {
 }
 
 //instance
-
 const logic = new Logic()
