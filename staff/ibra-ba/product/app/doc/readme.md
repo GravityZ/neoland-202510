@@ -39,7 +39,7 @@ Veterinary (User)
 
 ### UI/UX design
 
-[Test Demo (Figma)]('https://www.figma.com/design/YsLZ5iSPVyglJxKGyN9oMQ/MyPet?node-id=0-1&t=B0zYsCmEiJu75eKo-1')
+[Test Demo (Figma)]('https://www.figma.com/proto/YsLZ5iSPVyglJxKGyN9oMQ/MyPet?node-id=1-2&p=f&t=lM8gUVXZnULcObuF-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2')
 
 ## Technical description
 

@@ -70,6 +70,28 @@ loginForm.addEventListener('submit', function (event) {
         loginForm.reset()
         loginFeedback.textContent = ''
 
+        const pets = logic.getPets()
+
+        for (let i = 0; i < pets.length; i++) {
+            const pet = pets[i]
+
+            const item = document.createElement('li')
+            item.className = 'flex border-3 m-10'
+
+            const img = document.createElement('img')
+            img.src = pet.image
+            img.className = ' w-20 '
+            item.appendChild(img)
+
+            const name = document.createElement('p')
+            name.textContent = pet.name
+            name.className = 'm-3'
+            item.appendChild(name)
+
+            homePetList.appendChild(item)
+
+        }
+
         loginView.style.display = 'none'
         homeView.style.display = ''
     } catch (error) {

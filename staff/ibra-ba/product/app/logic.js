@@ -1,5 +1,4 @@
-function Logic() {
-}
+function Logic() { }
 
 Logic.prototype.registerUser = function (name, email, username, password, repeatPassword) {
     if (typeof name !== 'string') throw new Error('invalid name type')
@@ -80,8 +79,6 @@ Logic.prototype.addPet = function (name, birthdate, weight, image) {
 }
 
 
-
-
 Logic.prototype.getPets = function () {
     if (data.getLoggedInUserId() === null) throw new Error('user not logged in')
 
@@ -92,6 +89,7 @@ Logic.prototype.getPets = function () {
 
     return pets
 }
+
 
 //instance
 const logic = new Logic()
