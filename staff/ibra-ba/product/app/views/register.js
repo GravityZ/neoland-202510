@@ -132,7 +132,7 @@ registerForm.addEventListener('submit', function (event) {
 })
 
 const registerLoginLink = document.createElement('a')
-registerLoginLink.textContent = '<- Login'
+registerLoginLink.textContent = 'Login'
 registerLoginLink.href = ''
 registerLoginLink.className = 'underline font-bold'
 

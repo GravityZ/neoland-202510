@@ -39,7 +39,7 @@ Veterinary (User)
 
 ### UI/UX design
 
-[Figma]('')
+[Test Demo (Figma)]('https://www.figma.com/design/YsLZ5iSPVyglJxKGyN9oMQ/MyPet?node-id=0-1&t=B0zYsCmEiJu75eKo-1')
 
 ## Technical description
 
