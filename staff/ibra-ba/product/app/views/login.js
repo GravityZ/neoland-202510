@@ -43,7 +43,7 @@ loginShowPasswordButton.addEventListener('click', function (event) {
     if (loginPasswordInput.type === 'password') {
         loginPasswordInput.type = 'text'
         loginShowPasswordButton.textContent = 'Hide'
-        loginPasswordInput.className = 'border px-1 bg-[gold]'
+        
     } else {
         loginPasswordInput.type = 'password'
         loginShowPasswordButton.textContent = 'Show'
