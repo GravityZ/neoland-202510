@@ -1,0 +1,116 @@
+//dom 
+
+function createElement(tagName) {
+    return document.createElement(tagName)
+}
+
+function changeDisplay(element, value) {
+    element.style.display = value
+}
+
+function setTextContet(element, text) {
+    element.textContent = text
+}
+
+function addChild(element, childElement) {
+    element.appendChild(childElement)
+}
+
+function removeChild(element, childElement) {
+    element.removeChild(childElement)
+}
+
+function setClass(element, value) {
+    element.className = value
+}
+
+function addClass(element, value) {
+    element.classList.add(value)
+}
+
+function removeClass(element, value) {
+    element.classList.remove(value)
+}
+
+function createTextNode(text) {
+    return document.createTextNode(text)
+}
+
+function setFor(element, value) {
+    element.htmlFor = value
+}
+
+function setId(element, value) {
+    element.id = value
+}
+
+function setType(element, value) {
+    element.type = value
+}
+
+function getType(element) {
+    return element.type
+}
+
+function getValue(element) {
+    return element.value
+}
+
+function reset(element) {
+    element.reset()
+}
+
+function setSource(element, value) {
+    element.src = value
+}
+
+function setStep(element, value) {
+    element.step = value
+}
+
+function setHref(element, value) {
+    element.href = value
+}
+
+// interface
+
+function createView() {
+    const view = createElement('div')
+    setClass(view, 'p-4')
+
+    return view
+}
+
+function hideView(view) {
+    changeDisplay(view, 'none')
+}
+
+function showView(view) {
+    changeDisplay(view, '')
+}
+
+function createTitle() {
+    const title = createElement('h1')
+    setClass(title, 'font-bold text-xl')
+
+    return title
+}
+
+function createTitle2() {
+    const title2 = createElement('h2')
+    setClass(title2, 'font-bold')
+
+    return title2
+}
+
+function createParagraph() {
+    return createElement('p')
+}
+
+function createNav() {
+    return createElement('nav')
+}
+
+function createLink() {
+    co
+}
